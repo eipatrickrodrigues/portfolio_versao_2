@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
     <!--Lista de ícones de favoritos-->
@@ -26,7 +27,13 @@
     <div class="container">
         <div class="header">
             <div class="wallpaper-wrapper">
-                <img src="imagens/pexels-christina-morillo-1181316.jpg" alt="Mulher configurando um servidor/data center.">
+
+                <picture>
+                    <source media="(max-width: 700px)" srcset="imagens/pexels-christina-morillo-1181316-media.jpg">
+                    <source media="(max-width: 1080px)" srcset="imagens/pexels-christina-morillo-1181316.jpg">
+                    <img src="imagens/pexels-christina-morillo-1181316.jpg" alt="">
+                </picture>
+
             </div>
             <div class="banner">
                 <h1 id="title">Aprendiz de Programação</h1>
@@ -151,13 +158,13 @@
         <div class="small-container">
             <div class="row">
                 <div class="column-2-f">
-                    <div class="bloco">
+                    <div class="bloco" id="blog">
                         <h3>Blogs</h3>
                         <a href="https://www.riquezacuriosa.com.br/" target="_blank">Riqueza Curiosa</a><br>
                         <a href="https://www.mylifeandmyopinion.com/" target="_blank">My life & my opinion</a>
                     </div>
                 </div>
-                <div class="column-2-copyright">
+                <div class="column-2-f">
                     <p>Copyright &copy; 2021 - Todos os direitos reservados - Patrick Rodrigues.</p>
                 </div>
             </div>
